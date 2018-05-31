@@ -7,78 +7,97 @@
     android:orientation="vertical"
     tools:context="com.pm.serialport.MainActivity">
 
+    <include layout="@layout/layout_type_chose_include"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/et_dengzhu"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:text="线路"
-        android:textSize="40px"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="25dp" />
-
-    <EditText
-        android:id="@+id/et_xianlu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="38dp"
-        android:layout_toEndOf="@+id/textView"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:gravity="center">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/et_dengzhu"
-        android:layout_alignBottom="@+id/et_dengzhu"
-        android:layout_alignParentStart="true"
-        android:text="灯珠"
-        android:textSize="40px" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="线路"
+            android:textSize="40px"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="25dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/et_dengzhu"
-        android:layout_marginTop="19dp"
-        android:text="颜色"
-        android:textSize="40px" />
+        <EditText
+            android:id="@+id/et_xianlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
 
-    <EditText
-        android:id="@+id/et_dengzhu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_xianlu"
-        android:layout_below="@+id/et_xianlu"
-        android:layout_marginTop="11dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_dengzhu"
+            android:layout_alignBottom="@+id/et_dengzhu"
+            android:layout_alignParentStart="true"
+            android:text="站点"
+            android:textSize="40px" />
 
-    <EditText
-        android:id="@+id/et_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignStart="@+id/et_dengzhu"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_dengzhu"
+            android:layout_marginTop="19dp"
+            android:text="颜色"
+            android:textSize="40px" />
 
-    <Button
-        android:id="@+id/btn_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_color"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="49dp"
-        android:text="测试" />
+        <EditText
+            android:id="@+id/et_dengzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_xianlu"
+            android:layout_below="@+id/et_xianlu"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/et_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignStart="@+id/et_dengzhu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/et_color"
+            android:layout_marginTop="57dp"
+            android:layout_toStartOf="@+id/et_color"
+            android:text="测试" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_test"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btn_test"
+            android:text="TextView" />
+    </RelativeLayout>
 
 </RelativeLayout>
